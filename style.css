@@ -1,0 +1,122 @@
+:root {
+    --main-color: rgb(84, 142, 150);
+    
+}
+
+body {
+    padding-top: 20px;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    max-width: 1200px;
+    max-height: 1200px;
+font-family: sans-serif;
+}
+
+body::after {
+    content: "";
+    background-image: url(buns.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+
+#outer-card {
+    background-image: url(buns.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    padding: 8px;
+    height: 300px;
+    width: 150px;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-rows: 120px 120px 44px;
+}
+
+
+.results-box {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(180px);
+    transition: all 0.6s;
+    transition-timing-function: ease-out;
+}
+#next-week {
+    transition-delay: 0.3s;
+}
+ h2, h3 {
+     padding-top: 5px;
+     padding-bottom: 5px;
+     margin: 0px;
+     text-align: center;
+     width: 100%;
+     background-color: var(--main-color);
+     color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.10),
+        0 2px 2px rgba(0, 0, 0, 0.10),
+        0 4px 4px rgba(0, 0, 0, 0.10),
+        0 8px 8px rgba(0, 0, 0, 0.10),
+        0 16px 16px rgba(0, 0, 0, 0.10);
+        text-transform: uppercase;
+        font-size: 1em;
+ }
+ h3 {
+    font-size: 0.8em; 
+    padding-top: 14px;
+ }
+ h1 {
+    text-align: center;
+    font-size: 2em;   
+    color: var(--main-color);
+ }
+.card {
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10),
+        0 2px 2px rgba(0, 0, 0, 0.10),
+        0 4px 4px rgba(0, 0, 0, 0.10),
+        0 8px 8px rgba(0, 0, 0, 0.10),
+        0 16px 16px rgba(0, 0, 0, 0.10);
+        overflow: hidden;
+}
+
+#getBiscuiteer:hover {
+                                        box-shadow: 0 2px 1px rgba(0,0,0,0.10), 
+                                        0 4px 2px rgba(0,0,0,0.10), 
+                                        0 8px 4px rgba(0,0,0,0.10), 
+                                        0 16px 8px rgba(0,0,0,0.10),
+                                        0 32px 16px rgba(0,0,0,0.10);  
+                                    }
+
+#getBiscuiteer {
+    
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.10),
+        0 2px 2px rgba(0, 0, 0, 0.10),
+        0 4px 4px rgba(0, 0, 0, 0.10),
+        0 8px 8px rgba(0, 0, 0, 0.10),
+        0 16px 16px rgba(0, 0, 0, 0.10);
+}
+
+.opacity {
+    opacity: 1;
+    transform: translateX(0px);
+}
