@@ -1,4 +1,4 @@
-const biscuiteer = ["Nick", "Paul", "Gary", "Dave"]
+const biscuiteer = ["Nick", "Gary", "Paul", "Dave"]
 const resultsBox = document.getElementsByClassName("results-box");
 
 // gets the week Number
