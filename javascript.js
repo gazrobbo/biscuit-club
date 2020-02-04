@@ -1,4 +1,4 @@
-const biscuiteer = ["Nick", "Gary", "Paul", "Dave"]
+const biscuiteer = ["Nick", "Paul", "Gary", "Dave"]
 const resultsBox = document.getElementsByClassName("results-box");
 
 // gets the week Number
@@ -89,7 +89,7 @@ const nextWeek = document.getElementById("nextWeek");
 
 // places results in text fields
 
-button.onclick = ()  {
+button.onclick = () => {
     let thisWeekName = (biscuiteer[biscuiteerNumber()]);
 thisWeek.innerHTML=(thisWeekName);
     let nextWeekName = (biscuiteer[nextBiscuiteerNumber()]);
