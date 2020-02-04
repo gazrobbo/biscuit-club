@@ -1,4 +1,4 @@
-const biscuiteer = ["Nick", "Paul", "Gary", "Dave"]
+const biscuiteer = ["Nick", "Gary", "Paul", "Dave"]
 const resultsBox = document.getElementsByClassName("results-box");
 
 // gets the week Number
@@ -27,7 +27,36 @@ let z = (x - y);
 
 // changes the week number to 1 - 4
 
-let biscuiteerNumber = function() {
+// let biscuiteerNumber = function() {
+//     if (z == 0) {
+//         return 0;
+//     } else if (z == 0.25) {
+//         return 1;
+//     } else if (z == 0.5) {
+//         return 2;
+//     } else {
+//         return 3;
+//     }    
+// };
+
+// adds 1 to the above number and changes 5 to 1
+
+// let nextBiscuiteerNumber = function(){
+//     x = (biscuiteerNumber(z) + 1);
+//     if (x == 4) {
+//          return 0;
+//     }
+//     else {
+//         return x;
+//     }
+// };
+
+
+
+
+// changes the week number to 1 - 4
+
+let biscuiteerNumber = () => {
     if (z == 0) {
         return 0;
     } else if (z == 0.25) {
@@ -41,7 +70,7 @@ let biscuiteerNumber = function() {
 
 // adds 1 to the above number and changes 5 to 1
 
-let nextBiscuiteerNumber = function(){
+let nextBiscuiteerNumber = () => {
     x = (biscuiteerNumber(z) + 1);
     if (x == 4) {
          return 0;
@@ -60,7 +89,7 @@ const nextWeek = document.getElementById("nextWeek");
 
 // places results in text fields
 
-button.onclick = function() {
+button.onclick = ()  {
     let thisWeekName = (biscuiteer[biscuiteerNumber()]);
 thisWeek.innerHTML=(thisWeekName);
     let nextWeekName = (biscuiteer[nextBiscuiteerNumber()]);
